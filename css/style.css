@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.controls {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.controls label {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #444;
+  cursor: pointer;
+}
+
+.controls input[type="checkbox"],
+.controls input[type="radio"] {
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+
+#problem-display {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+  padding: 1.5rem 0;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+.answer-section {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+#answer-input {
+  width: 160px;
+  padding: 0.75rem 1rem;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#answer-input:focus {
+  border-color: #4a90d9;
+}
+
+#submit-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #4a90d9;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+#submit-btn:hover {
+  background-color: #3a7bc8;
+}
+
+#submit-btn:active {
+  transform: scale(0.97);
+}
+
+#feedback {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  min-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+#feedback.correct {
+  color: #2ecc71;
+}
+
+#feedback.incorrect {
+  color: #e74c3c;
+}
+
+#score {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  #problem-display {
+    font-size: 2.2rem;
+    padding: 1rem 0;
+  }
+
+  .answer-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #answer-input {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  #submit-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}

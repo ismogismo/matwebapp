@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Practice</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Math Practice</h1>
+  </header>
+
+  <main>
+    <section aria-label="Settings">
+      <fieldset>
+        <legend>Operations</legend>
+        <label><input type="checkbox" id="op-add" checked> +</label>
+        <label><input type="checkbox" id="op-sub" checked> -</label>
+        <label><input type="checkbox" id="op-mul" checked> *</label>
+        <label><input type="checkbox" id="op-div" checked> /</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Difficulty</legend>
+        <label><input type="radio" name="difficulty" id="diff-easy" value="easy" checked> Easy (1-10)</label>
+        <label><input type="radio" name="difficulty" id="diff-medium" value="medium"> Medium (1-50)</label>
+        <label><input type="radio" name="difficulty" id="diff-hard" value="hard"> Hard (1-100)</label>
+      </fieldset>
+    </section>
+
+    <section aria-label="Problem">
+      <p id="problem-display">12 + 5 = ?</p>
+    </section>
+
+    <section aria-label="Answer">
+      <label for="answer-input">Your answer:</label>
+      <input type="number" id="answer-input">
+      <button id="submit-btn" type="button">Submit</button>
+    </section>
+
+    <section aria-label="Results">
+      <p id="feedback"></p>
+      <p id="score">Score: 0 / 0 (0%)</p>
+    </section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

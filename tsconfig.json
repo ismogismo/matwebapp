@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "outDir": "./js",
+    "rootDir": "./src",
+    "strict": true,
+    "module": "ES6"
+  }
+}
